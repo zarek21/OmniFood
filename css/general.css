@@ -232,6 +232,7 @@ HELPER CLASS
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
