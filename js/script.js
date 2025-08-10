@@ -1,5 +1,10 @@
-///////////////////////////////////////////////////////////
-// Fixing flexbox gap property missing in some Safari versions
+console.log("Hello World!"); // Fixing flexbox gap property missing in some Safari versions
+
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+yearEl.textContent = currentYear;
+
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
