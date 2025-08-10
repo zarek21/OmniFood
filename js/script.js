@@ -28,6 +28,11 @@ allLinks.forEach(function (link) {
         top: 0,
         behavior: "smooth",
       });
+
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelectorAll(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
 
