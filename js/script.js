@@ -13,6 +13,24 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+// SMOOTH SCROLLING ANIMATION
+
+const allLinks = document.querySelectorAll("a:link");
+console.log(allLinks);
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    // Scroll back to top
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+  });
+});
+
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";

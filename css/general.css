@@ -51,6 +51,9 @@ html {
   /* this percentage represents 10px / 16px = 0.625 = 62.5% */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* DOES NOT WORK ON SAFARI & EDGE */
+  /* scroll-behavior: smooth; */
 }
 
 * {
