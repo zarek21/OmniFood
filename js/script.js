@@ -30,7 +30,7 @@ allLinks.forEach(function (link) {
       });
 
     if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelectorAll(href);
+      const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
   });
