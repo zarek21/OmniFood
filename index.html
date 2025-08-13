@@ -559,13 +559,14 @@
               </p>
 
               <!-- FORM -->
-              <form class="cta-form" action="#">
+              <form class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
                     id="full-name"
                     type="text"
                     placeholder="Carlo Montenegro"
+                    name="full-name"
                     required
                   />
                 </div>
@@ -576,13 +577,14 @@
                     id="email"
                     type="email"
                     placeholder="mail@example.com"
+                    name="email"
                     required
                   />
                 </div>
 
                 <div>
                   <label for="select-wehre">Where did you hear from us?</label>
-                  <select id="select-where" required>
+                  <select id="select-where" name="select-where" required>
                     <option value="">Please choose one option:</option>
                     <option value="">Friends and family</option>
                     <option value="">Youtube videos</option>
